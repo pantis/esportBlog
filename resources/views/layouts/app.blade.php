@@ -30,19 +30,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left Side Of Navbar -->
+                {{-- Left Side Of Navbar --}}
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                            <a class="nav-link active" href="{{ url('/') }}">{{ __('Domov') }}</a>
+                        <a class="nav-link active" href="{{ url('/') }}">{{ __('Domov') }}</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link active" href="{{ route('guides') }}">{{ __('Prirucky') }}</a>
+                        <a class="nav-link active" href="{{ route('guides') }}">{{ __('Prirucky') }}</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link active" href="{{ route('gallery') }}">{{ __('Galeria') }}</a>
+                        <a class="nav-link active" href="{{ route('gallery') }}">{{ __('Galeria') }}</a>
                     </li>
                 </ul>
-                <!-- Right Side Of Navbar -->
+                {{-- Right Side Of Navbar  --}}
                 <ul class="navbar-nav ml-auto">
                     @can('viewAny', \App\Models\User::class)
                         <li class="nav-item">
@@ -79,7 +79,7 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                     document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
@@ -97,6 +97,10 @@
     <main class="pb-4">
         @yield('content')
     </main>
+
+    <footer>
+        Patrik Mydlar
+    </footer>
 </div>
 </body>
 </html>
