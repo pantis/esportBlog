@@ -15,7 +15,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="editForm">
+                <form id="editForm" enctype="multipart/form-data">
                     <div class="modal-body">
                         @csrf
                         <input type="hidden" id="id" name="id">
@@ -41,19 +41,9 @@
                             </div>
                             @enderror
                         </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Thumbnail</label>
-                            <input type="file" class="form-control-file" id="thumbnailEdit" name="thumbnail" value=""
-                                   accept=".jpg, .jpeg, .png">
-                            @error('thumbnail')
-                            <div class="text-red-500 mt-2 text-sm">
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </form>
@@ -104,7 +94,7 @@
         @if ($articles->count())
             @foreach($articles as $article)
                 @if ($article->ownedBy(auth()->user()))
-                    <div class="container mb-2">
+                    <div id="divko1" class="container mb-2">
                         <div class="media pt-3 pb-3">
                             <img class="d-flex align-self-center mr-3 ml-3"
                                  src="{{ asset('/storage/img/'.$article->thumbnail) }}"
@@ -148,9 +138,33 @@
                 $("#id").val(article.id);
                 $("#titleEdit").val(article.title);
                 $("#textEdit").val(article.text);
-                $("#thumbnailEdit").val(article.thumbnail);
             });
         }
+
+        $("#editForm").submit(function (e) {
+           e.preventDefault();
+           var id = $("#id").val();
+           var title = $("#titleEdit").val();
+           var text = $("#textEdit").val();
+           var _token = $("input[name=_token]").val();
+
+           $.ajax({
+               url:"{{ route('articles.update') }}",
+               type:"PUT",
+               data:{
+                   id:id,
+                   title:title,
+                   text:text,
+                   _token:_token
+               },
+               success:function (response){
+                   $('#divko1').html(response.id);
+                   $('#editModal').modal('toggle');
+                   $('#editForm')[0].reset();
+               }
+           });
+        });
     </script>
+
 
 @endsection

@@ -42,11 +42,20 @@ class ArticleController extends Controller
     public function destroy(Article $article) {
         $article->delete();
 
-        return redirect()->route('articles');;
+        return redirect()->route('articles');
+    }
+
+    public function update(Request $request) {
+        $article = Article::find($request->id);
+
+        $article->update($request->all());
+
+        return response()->json($article);
     }
 
     public function articleById($id) {
         $article = Article::find($id);
+
         return response()->json($article);
     }
 }
