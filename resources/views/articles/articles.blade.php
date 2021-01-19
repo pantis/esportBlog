@@ -1,6 +1,66 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Modal -->
+    <div class="modal" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="editForm">
+                    <div class="modal-body">
+                        @csrf
+                        <input type="hidden" id="id" name="id">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nazov</label>
+                            <input type="text" class="form-control" id="titleEdit" name="title" size="50"
+                                   pattern="(?=.*[A-Z]).{1,}"
+                                   maxlength="50" value="" required>
+                            @error('title')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Text</label>
+                            <input type="text" class="form-control" id="textEdit" name="text" pattern="(?=.*[A-Z]).{1,}"
+                                   value=""
+                                   required>
+                            @error('text')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Thumbnail</label>
+                            <input type="file" class="form-control-file" id="thumbnailEdit" name="thumbnail" value=""
+                                   accept=".jpg, .jpeg, .png">
+                            @error('thumbnail')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="container ramcek">
         <div class="container">
             <form action="{{ route('articles') }}" method="post" enctype="multipart/form-data">
@@ -9,7 +69,7 @@
                 <div class="form-group">
                     <label for="formGroupExampleInput">Nazov</label>
                     <input type="text" class="form-control" id="title" name="title" size="50" pattern="(?=.*[A-Z]).{1,}"
-                           maxlength="50" value="">
+                           maxlength="50" value="" required>
                     @error('title')
                     <div class="text-red-500 mt-2 text-sm">
                         {{ $message }}
@@ -18,7 +78,8 @@
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Text</label>
-                    <input type="text" class="form-control" id="text" name="text" pattern="(?=.*[A-Z]).{1,}" value="">
+                    <input type="text" class="form-control" id="text" name="text" pattern="(?=.*[A-Z]).{1,}" value=""
+                           required>
                     @error('text')
                     <div class="text-red-500 mt-2 text-sm">
                         {{ $message }}
@@ -50,13 +111,22 @@
                                  alt="Generic placeholder image"
                                  style="width: 15%; height: 15%">
                             <div class="media-body">
-                                <h5 class="mt-0" style="color: #D37E1F">{{ $article->title }}</h5>
-                                <p style="color: black">{{ $article->text }}</p>
+                                <h5 class="mt-0">{{ $article->title }}</h5>
+
+                                <p>{{ $article->text }}</p>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" onclick="edit({{ $article->id }})"
+                                   class="btn btn-primary float-right"
+                                   style="margin-right: 15px">
+                                    Upravit
+                                </a>
                             </div>
                             <form action="{{ route('articles.destroy', $article) }}" method="post">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger float-right" style="margin-right: 15px">
+                                <button type="submit" class="btn btn-danger float-right"
+                                        style="margin-right: 15px">
                                     Odstranit
                                 </button>
                             </form>
@@ -70,4 +140,17 @@
             </div>
         @endif
     </div>
+
+    <script>
+        function edit(id) {
+            $.get('articles/' + id, function (article) {
+                $("#editModal").modal('toggle');
+                $("#id").val(article.id);
+                $("#titleEdit").val(article.title);
+                $("#textEdit").val(article.text);
+                $("#thumbnailEdit").val(article.thumbnail);
+            });
+        }
+    </script>
+
 @endsection

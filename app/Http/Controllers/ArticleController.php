@@ -44,4 +44,9 @@ class ArticleController extends Controller
 
         return redirect()->route('articles');;
     }
+
+    public function articleById($id) {
+        $article = Article::find($id);
+        return response()->json($article);
+    }
 }

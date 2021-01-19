@@ -22,22 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Guide.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/GalleryFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/GuideFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_153547_create_galleries_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_153644_create_guides_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5665a2cd-cc77-4315-9ab8-8e1487b679c8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5665a2cd-cc77-4315-9ab8-8e1487b679c8.xml" afterDir="false" />
+    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="pridany zaklad pre galeriu a prirucky">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuidesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuidesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guides/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guides/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +177,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semestralnapracagit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -248,8 +241,18 @@
       <workItem from="1610893928645" duration="456000" />
       <workItem from="1610902730126" duration="2137000" />
       <workItem from="1610914658878" duration="711000" />
-      <workItem from="1610982744452" duration="708000" />
+      <workItem from="1610982744452" duration="5922000" />
+      <workItem from="1611010314660" duration="1527000" />
+      <workItem from="1611045500471" duration="19363000" />
     </task>
+    <task id="LOCAL-00001" summary="pridany zaklad pre galeriu a prirucky">
+      <created>1610983723719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610983723719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +278,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="pridany zaklad pre galeriu a prirucky" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridany zaklad pre galeriu a prirucky" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608682862654">
@@ -293,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610640171782" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610640745635">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611052503199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610640745635" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1611052503199" />
     <state x="837" y="418" key="Github.ShareDialog" timestamp="1610637666386">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -349,9 +354,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610476861910" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610914669320">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611069795977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610914669320" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1611069795977" />
   </component>
 </project>
