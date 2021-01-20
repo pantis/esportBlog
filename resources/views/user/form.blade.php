@@ -7,8 +7,12 @@
     @csrf
     @method($method)
     <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="{{ old('username', @$model->username) }}">
+    </div>
+    <div class="form-group">
         <label for="name">Full name</label>
-        <input type="name" class="form-control" id="name" name="name" placeholder="Full name" value="{{ old('name', @$model->name) }}">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Full name" value="{{ old('name', @$model->name) }}">
     </div>
     <div class="form-group">
         <label for="email">Email address</label>
@@ -21,7 +25,7 @@
     </div>
     <div class="form-group">
         <label for="password">Password again</label>
-        <input type="password" class="form-control" id="password" name="password_confirmation" placeholder="Password">
+        <input type="password" class="form-control" id="password-confirm" name="password_confirmation" placeholder="Password">
     </div>
     <div class="form-group">
         <input type="submit" class="btn btn-primary form-control">

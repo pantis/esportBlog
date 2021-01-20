@@ -25,7 +25,11 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/articles', [App\Http\Controllers\ArticleController::class, 'index'])->name('articles');
 Route::post('/articles', [App\Http\Controllers\ArticleController::class, 'store']);
 Route::delete('/articles/{article}', [App\Http\Controllers\ArticleController::class, 'destroy'])->name('articles.destroy');
+Route::get('/articles/{id}', [App\Http\Controllers\ArticleController::class, 'articleById']);
+Route::put('/articles', [App\Http\Controllers\ArticleController::class, 'update'])->name('articles.update');
 
 Route::get('/gallery', [App\Http\Controllers\GalleryController::class, 'index'])->name('gallery');
 
 Route::get('/guides', [App\Http\Controllers\GuidesController::class, 'index'])->name('guides');
+
+

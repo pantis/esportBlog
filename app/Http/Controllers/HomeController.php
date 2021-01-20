@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $articles = Article::get();
+        $articles = Article::orderBy('id', 'DESC')->get();
 
         return view('articles.index', [
             'articles' => $articles

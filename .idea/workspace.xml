@@ -3,8 +3,32 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="" />
+    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/guides/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guides/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +39,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -131,16 +160,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1m21hZBeHNEXxJ0vhtT81VtIKDZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semestralnapracagit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -198,8 +232,53 @@
       <workItem from="1610623953463" duration="2888000" />
       <workItem from="1610636560200" duration="262000" />
       <workItem from="1610636839692" duration="643000" />
-      <workItem from="1610637497503" duration="8000" />
+      <workItem from="1610637497503" duration="5754000" />
+      <workItem from="1610740856550" duration="634000" />
+      <workItem from="1610887928625" duration="1197000" />
+      <workItem from="1610893928645" duration="456000" />
+      <workItem from="1610902730126" duration="2137000" />
+      <workItem from="1610914658878" duration="711000" />
+      <workItem from="1610982744452" duration="5922000" />
+      <workItem from="1611010314660" duration="1527000" />
+      <workItem from="1611045500471" duration="39841000" />
+      <workItem from="1611133097047" duration="14650000" />
     </task>
+    <task id="LOCAL-00001" summary="pridany zaklad pre galeriu a prirucky">
+      <created>1610983723719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610983723719</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pridanie editovanie clankov, modal pred editovanie">
+      <created>1611076408040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611076408040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="editovanie titlu a textu clankov pomocou ajaxu">
+      <created>1611094117467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611094117468</updated>
+    </task>
+    <task id="LOCAL-00004" summary="upraveny vzhlad gelerie">
+      <created>1611106356578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611106356578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii">
+      <created>1611149412905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611149412905</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,10 +287,29 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="pridany zaklad pre galeriu a prirucky" />
+    <MESSAGE value="pridanie editovanie clankov, modal pred editovanie" />
+    <MESSAGE value="editovanie titlu a textu clankov pomocou ajaxu" />
+    <MESSAGE value="upraveny vzhlad gelerie" />
+    <MESSAGE value="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608682862654">
@@ -226,18 +324,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="488" y="345" width="943" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610477020594" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610555952502">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610640171782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610555952502" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610637034089">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610640171782" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611147402206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610637034089" />
-    <state x="837" y="418" key="Github.ShareDialog" timestamp="1610637460862">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1611147402206" />
+    <state x="837" y="418" key="Github.ShareDialog" timestamp="1610637666386">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="837" y="418" key="Github.ShareDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610637460862" />
+    <state x="837" y="418" key="Github.ShareDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610637666386" />
+    <state x="679" y="225" key="Github.UntrackedFilesDialog" timestamp="1610637675436">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610637675436" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1608684289632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -282,9 +384,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610476861910" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610555646972">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611141587861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610555646972" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1611141587861" />
   </component>
 </project>

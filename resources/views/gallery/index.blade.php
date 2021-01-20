@@ -2,6 +2,30 @@
 
 @section('content')
     <div class="container ramcek">
-        Gallery
+        <div class="row">
+            @if ($gallery->count())
+                <?php
+                $i = 1;
+                ?>
+                @foreach($gallery as $galleryimg)
+                    <div class="col-md-3 galleryramcek">
+                        <img src="{{ asset('/storage/img/'.$galleryimg->galleryimg) }}" class="img-fluid galleryimg"
+                             alt="Responsive image">
+                        @if($i % 3 === 0)
+                    </div></div>
+        <div class="row">
+            @else
+        </div>
+        @endif
+        <?php
+        $i++;
+        ?>
+        @endforeach
+    </div>
+        @else
+            <div class="container">
+                <p>Nie su tu zatial ziadne obrazky!</p>
+            </div>
+        @endif
     </div>
 @endsection
