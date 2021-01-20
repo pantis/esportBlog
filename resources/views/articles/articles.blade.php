@@ -15,7 +15,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="editForm" enctype="multipart/form-data">
+                <form id="editForm">
                     <div class="modal-body">
                         @csrf
                         <input type="hidden" id="id" name="id">
@@ -94,16 +94,16 @@
         @if ($articles->count())
             @foreach($articles as $article)
                 @if ($article->ownedBy(auth()->user()))
-                    <div id="divko1" class="container mb-2">
+                    <div class="container mb-2">
                         <div class="media pt-3 pb-3">
                             <img class="d-flex align-self-center mr-3 ml-3"
                                  src="{{ asset('/storage/img/'.$article->thumbnail) }}"
                                  alt="Generic placeholder image"
                                  style="width: 15%; height: 15%">
                             <div class="media-body">
-                                <h5 class="mt-0">{{ $article->title }}</h5>
+                                <h5 id="ajaxH5" class="mt-0">{{ $article->title }}</h5>
 
-                                <p>{{ $article->text }}</p>
+                                <p id="ajaxP">{{ $article->text }}</p>
                             </div>
                             <div>
                                 <a href="javascript:void(0)" onclick="edit({{ $article->id }})"
@@ -158,7 +158,8 @@
                    _token:_token
                },
                success:function (response){
-                   $('#divko1').html(response.id);
+                   $('#ajaxH5').html(response.title );
+                   $('#ajaxP').html(response.text);
                    $('#editModal').modal('toggle');
                    $('#editForm')[0].reset();
                }

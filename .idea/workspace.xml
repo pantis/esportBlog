@@ -22,11 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="pridanie editovanie clankov, modal pred editovanie">
+    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="editovanie titlu a textu clankov pomocou ajaxu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/articles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/guides/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guides/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +241,7 @@
       <workItem from="1610914658878" duration="711000" />
       <workItem from="1610982744452" duration="5922000" />
       <workItem from="1611010314660" duration="1527000" />
-      <workItem from="1611045500471" duration="29245000" />
+      <workItem from="1611045500471" duration="38321000" />
     </task>
     <task id="LOCAL-00001" summary="pridany zaklad pre galeriu a prirucky">
       <created>1610983723719</created>
@@ -255,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611076408040</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="editovanie titlu a textu clankov pomocou ajaxu">
+      <created>1611094117467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611094117468</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +292,8 @@
     </ignored-roots>
     <MESSAGE value="pridany zaklad pre galeriu a prirucky" />
     <MESSAGE value="pridanie editovanie clankov, modal pred editovanie" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie editovanie clankov, modal pred editovanie" />
+    <MESSAGE value="editovanie titlu a textu clankov pomocou ajaxu" />
+    <option name="LAST_COMMIT_MESSAGE" value="editovanie titlu a textu clankov pomocou ajaxu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608682862654">
@@ -358,9 +368,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1610476861910" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611069795977">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611105029902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1611069795977" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.132.1920.1040@0.0.1920.1040" timestamp="1611105029902" />
   </component>
 </project>

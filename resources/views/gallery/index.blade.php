@@ -8,8 +8,8 @@
                 $i = 1;
                 ?>
                 @foreach($gallery as $galleryimg)
-                    <div class="col-md-3 galleryimg">
-                        <img src="{{ asset('/img/'.$galleryimg->galleryimg) }}" class="img-fluid"
+                    <div class="col-md-3 galleryramcek">
+                        <img src="{{ asset('/img/'.$galleryimg->galleryimg) }}" class="img-fluid galleryimg"
                              alt="Responsive image">
                         @if($i % 3 === 0)
                     </div></div>
@@ -21,17 +21,10 @@
         $i++;
         ?>
         @endforeach
-        @if ($i % 3 > 0)
-            @for ($j = 0; $j < $i % 3; $j++)
-                <div class="col-md-3 galleryimg">
-                </div>
-            @endfor
-    </div>
-    @endif
-    @else
-        <div class="container">
-            <p>Nie su tu zatial ziadne obrazky!</p>
-        </div>
+        @else
+            <div class="container">
+                <p>Nie su tu zatial ziadne obrazky!</p>
+            </div>
         @endif
-        </div>
+    </div>
 @endsection

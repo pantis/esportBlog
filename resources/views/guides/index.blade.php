@@ -10,8 +10,8 @@
                              alt="Generic placeholder image"
                              style="width: 15%; height: 15%">
                         <div class="media-body">
-                            <h5 class="mt-0" style="color: #D37E1F">{{ $guide->title }}</h5>
-                            <p style="color: black">{{ $guide->text }}</p>
+                            <h5 class="mt-0">{{ $guide->title }}</h5>
+                            <p>{{ $guide->text }}</p>
                         </div>
                     </div>
                 </div>

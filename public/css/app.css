@@ -102,9 +102,22 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.galleryimg {
+.galleryramcek {
     padding: 16px;
-    margin: auto;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.galleryimg {
+    border-radius: 8px;
+    border: 6px solid #313131;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galleryramcek:hover {
+    transform: scale(1.5);
+    position: relative;
+    z-index: 10;
 }
 
 footer {
