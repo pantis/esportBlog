@@ -5,7 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Modal -->
-    <div class="modal" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+    <div class="modal" id="editModal" tabindex="-1" role="dialog"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -20,7 +20,7 @@
                         @csrf
                         <input type="hidden" id="id" name="id">
                         <div class="form-group">
-                            <label for="formGroupExampleInput">Nazov</label>
+                            <label>Nazov</label>
                             <input type="text" class="form-control" id="titleEdit" name="title" size="50"
                                    pattern="(?=.*[A-Z]).{1,}"
                                    maxlength="50" value="" required>
@@ -31,7 +31,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Text</label>
+                            <label>Text</label>
                             <input type="text" class="form-control" id="textEdit" name="text" pattern="(?=.*[A-Z]).{1,}"
                                    value=""
                                    required>
@@ -57,7 +57,7 @@
                 @csrf
                 <input type="hidden" name="id" value="">
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Nazov</label>
+                    <label>Nazov</label>
                     <input type="text" class="form-control" id="title" name="title" size="50" pattern="(?=.*[A-Z]).{1,}"
                            maxlength="50" value="" required>
                     @error('title')
@@ -67,7 +67,7 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Text</label>
+                    <label>Text</label>
                     <input type="text" class="form-control" id="text" name="text" pattern="(?=.*[A-Z]).{1,}" value=""
                            required>
                     @error('text')
@@ -77,8 +77,8 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Thumbnail</label>
-                    <input type="file" class="form-control-file" id="thumbnail" name="thumbnail" value=""
+                    <label>Thumbnail</label>
+                    <input type="file" class="form-control-file" id="thumbnail" name="thumbnail"
                            accept=".jpg, .jpeg, .png">
                     @error('thumbnail')
                     <div class="text-red-500 mt-2 text-sm">
@@ -101,9 +101,9 @@
                                  alt="Generic placeholder image"
                                  style="width: 15%; height: 15%">
                             <div class="media-body">
-                                <h5 id="ajaxH5" class="mt-0">{{ $article->title }}</h5>
+                                <h5 id="{{ 'ajaxH'.$article->id }}" class="mt-0">{{ $article->title }}</h5>
 
-                                <p id="ajaxP">{{ $article->text }}</p>
+                                <p id="{{ 'ajaxP'.$article->id }}">{{ $article->text }}</p>
                             </div>
                             <div>
                                 <a href="javascript:void(0)" onclick="edit({{ $article->id }})"
@@ -158,14 +158,15 @@
                    _token:_token
                },
                success:function (response){
-                   $('#ajaxH5').html(response.title );
-                   $('#ajaxP').html(response.text);
+                   var titleH = '#ajaxH' + response.id.toString();
+                   var textP = '#ajaxP' + response.id.toString();
+                   $(titleH).html(response.title);
+                   $(textP).html(response.text);
                    $('#editModal').modal('toggle');
                    $('#editForm')[0].reset();
                }
            });
         });
     </script>
-
 
 @endsection

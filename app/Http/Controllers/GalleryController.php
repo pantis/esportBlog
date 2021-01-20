@@ -9,7 +9,7 @@ class GalleryController extends Controller
 {
     public function index()
     {
-        $gallery = Gallery::get();
+        $gallery = Gallery::orderBy('id', 'DESC')->get();
 
         return view('gallery.index', [
             'gallery' => $gallery

@@ -9,7 +9,7 @@ class GuidesController extends Controller
 {
     public function index()
     {
-        $guides = Guide::get();
+        $guides = Guide::orderBy('id', 'DESC')->get();
 
         return view('guides.index', [
             'guides' => $guides

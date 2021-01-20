@@ -10,7 +10,7 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::get();
+        $articles = Article::orderBy('id', 'DESC')->get();
 
         return view('articles.articles', [
             'articles' => $articles
@@ -20,9 +20,9 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:50',
             'text' => 'required',
-            'thumbnail' => 'required'
+            'thumbnail' => 'required|mimes:jpg,png,jpeg'
         ]);
 
         if ($request->hasFile('thumbnail')) {

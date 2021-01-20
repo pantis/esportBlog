@@ -21,6 +21,7 @@
         $i++;
         ?>
         @endforeach
+    </div>
         @else
             <div class="container">
                 <p>Nie su tu zatial ziadne obrazky!</p>
