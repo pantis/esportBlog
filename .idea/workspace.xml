@@ -22,16 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="upraveny vzhlad gelerie">
+    <list default="true" id="95d4fe2f-9894-4d1a-a356-819e2edf3e9f" name="Default Changelist" comment="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuidesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuidesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/guides/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guides/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +241,7 @@
       <workItem from="1610982744452" duration="5922000" />
       <workItem from="1611010314660" duration="1527000" />
       <workItem from="1611045500471" duration="39841000" />
-      <workItem from="1611133097047" duration="11615000" />
+      <workItem from="1611133097047" duration="14650000" />
     </task>
     <task id="LOCAL-00001" summary="pridany zaklad pre galeriu a prirucky">
       <created>1610983723719</created>
@@ -276,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611106356578</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii">
+      <created>1611149412905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611149412905</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +308,8 @@
     <MESSAGE value="pridanie editovanie clankov, modal pred editovanie" />
     <MESSAGE value="editovanie titlu a textu clankov pomocou ajaxu" />
     <MESSAGE value="upraveny vzhlad gelerie" />
-    <option name="LAST_COMMIT_MESSAGE" value="upraveny vzhlad gelerie" />
+    <MESSAGE value="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalna verzia, zoradenie clankov, priruciek a obrazkov v galerii" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608682862654">

@@ -25,7 +25,7 @@
     </div>
     <div class="form-group">
         <label for="password">Password again</label>
-        <input type="password" class="form-control" id="password" name="password_confirmation" placeholder="Password">
+        <input type="password" class="form-control" id="password-confirm" name="password_confirmation" placeholder="Password">
     </div>
     <div class="form-group">
         <input type="submit" class="btn btn-primary form-control">

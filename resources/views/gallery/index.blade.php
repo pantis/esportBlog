@@ -9,7 +9,7 @@
                 ?>
                 @foreach($gallery as $galleryimg)
                     <div class="col-md-3 galleryramcek">
-                        <img src="{{ asset('/img/'.$galleryimg->galleryimg) }}" class="img-fluid galleryimg"
+                        <img src="{{ asset('/storage/img/'.$galleryimg->galleryimg) }}" class="img-fluid galleryimg"
                              alt="Responsive image">
                         @if($i % 3 === 0)
                     </div></div>
